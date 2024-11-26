@@ -56,3 +56,4 @@ for table_name,schema_name in tables:
 #Fermer
 cursor.close()
 conn.close()
+

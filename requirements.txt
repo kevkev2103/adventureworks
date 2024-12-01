@@ -5,3 +5,6 @@ pydantic
 azure-identity
 python-dotenv
 pandas
+azure-storage-blob
+azure-identity
+

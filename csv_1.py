@@ -1,7 +1,19 @@
 import os
+from datetime import datetime, timedelta
 from dotenv import load_dotenv
 import pyodbc
 import pandas as pd
+from azure.identity import DefaultAzureCredential
+from azure.storage.blob import (
+    BlobServiceClient,
+    ContainerClient,
+    BlobClient,
+    BlobSasPermissions,
+    ContainerSasPermissions,
+    UserDelegationKey,
+    generate_container_sas,
+    generate_blob_sas
+)
 
 load_dotenv()
 
